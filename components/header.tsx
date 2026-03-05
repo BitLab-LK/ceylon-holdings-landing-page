@@ -9,11 +9,11 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Image
-            src="/logo.png"
+            src="/Logo.jpg"
             alt="Ceylon Holdings"
             width={48}
             height={48}
-            className="h-12 w-12"
+            className="h-12 w-12 rounded-full object-cover"
           />
           <span className="text-xl font-bold text-primary hidden sm:block">Ceylon Holdings</span>
         </div>
