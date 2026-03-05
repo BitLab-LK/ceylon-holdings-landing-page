@@ -34,7 +34,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-8 text-center text-sm text-white/60">
-          <p>&copy; 2026 Ceylon Holdings. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Ceylon Holdings. All rights reserved.</p>
         </div>
       </div>
     </footer>
