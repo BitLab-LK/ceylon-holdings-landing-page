@@ -43,29 +43,19 @@ const amenities: Amenity[] = [
 
 export function Amenities() {
   return (
-    <section id="amenities" className="py-20 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4 text-balance">
-            Premium Amenities
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover the world-class facilities and services that make our properties truly exceptional
-          </p>
-        </div>
+    <section id="amenities" className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-12 text-center">
+          What We Offer
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {amenities.map((amenity, index) => {
             const Icon = amenity.icon
             return (
-              <div
-                key={index}
-                className="p-8 bg-card rounded-lg border border-border hover:border-accent hover:shadow-lg transition-all duration-300"
-              >
-                <div className="mb-4 inline-block p-3 bg-accent/10 rounded-lg">
-                  <Icon size={28} className="text-accent" />
-                </div>
-                <h3 className="text-xl font-bold text-primary mb-2">
+              <div key={index} className="flex flex-col items-start gap-3">
+                <Icon size={32} className="text-accent" />
+                <h3 className="text-lg font-semibold text-primary">
                   {amenity.title}
                 </h3>
                 <p className="text-muted-foreground">
