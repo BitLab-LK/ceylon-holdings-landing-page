@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
 export function Hero() {
@@ -22,8 +23,13 @@ export function Hero() {
           <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
             Contact Us
           </Button>
-          <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 font-semibold">
-            Learn More
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-white text-white hover:bg-white/10 font-semibold"
+          >
+            <Link href="#amenities">Learn More</Link>
           </Button>
         </div>
       </div>
